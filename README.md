@@ -1,4 +1,5 @@
-# Butterfly-Chart for Web (HTML / JS)
+# Butterfly-Chart (Tornado Chart) for Web using HTML / JS
+
 Chart with Dual Converging Scales
 
 Butterfly chart customised  using google chart visualization. Show possitive and negative values in same level. 
