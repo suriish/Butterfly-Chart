@@ -1,0 +1,41 @@
+<html>
+
+<head>
+    <!-- Google Bar chart  visualization using CDN -->
+    <!-- <script type="text/javascript" src="https://www.google.com/jsapi?autoload={'modules':[{'name':'visualization','version':'1.1','packages':['bar']}]}"></script> -->
+    <script src="googleVisualization.js" type="text/javascript">
+    </script>
+</head>
+
+<body>
+    <button class="change value" onClick="drawbarChart(bdata,'barchart_values')">Draw Chart</button>
+    <button class="change value" onClick="reDrawChart()">Change Value</button>
+
+    <div id="barchart_values"></div>
+
+
+<script>
+function reDrawChart() {
+    data = google.visualization.arrayToDataTable([
+        [' ', 'Most Liked', {
+            role: 'style'
+        }, {
+            role: 'annotation'
+        }, 'Most Disliked', {
+            role: 'style'
+        }, {
+            role: 'annotation'
+        }],
+        [' ', 5.30, '#4286f4', 'lable2', -6.7, '#4286f4', 'lable3'],
+        [' ', 16.94, '#c91e1e', 'Food', -14.94, '#c91e1e', 'Clealines'],
+        [' ', 20.49, '#599906', 'service', -21.65, '#599906', 'Ambiance'],
+    ]);
+    drawbarChart(data,'barchart_values');
+}
+</script>
+    <script src="bflyChart.js" type="text/javascript"></script>
+
+
+</body>
+
+</html>
